@@ -1,8 +1,0 @@
-meta:
-  environment: docker
-build:
-  skip: true
-run:
-  image: nginx:alpine
-  persistenceMount: /usr/share/nginx/html
-  containerPort: "80"
