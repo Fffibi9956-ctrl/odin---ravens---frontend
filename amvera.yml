@@ -1,13 +1,8 @@
 meta:
-  environment: python
-  toolchain:
-    name: pip
-    version: "3.11"
+  environment: docker
 build:
-  requirementsPath: requirements.txt
-  useCache: true
+  skip: true
 run:
-  scriptName: index.html
-  command: null
-  persistenceMount: /data
+  image: nginx:alpine
+  persistenceMount: /usr/share/nginx/html
   containerPort: "80"
