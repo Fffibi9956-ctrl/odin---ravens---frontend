@@ -1,13 +1,6 @@
 meta:
-  environment: python
-  toolchain:
-    name: pip
-    version: "3.11"
+  environment: static
 build:
-  requirementsPath: requirements.txt
-  useCache: true
+  staticPath: /
 run:
-  scriptName: index.html
-  command: null
-  persistenceMount: /data
   containerPort: "80"
