@@ -1,6 +1,0 @@
-meta:
-  environment: static
-build:
-  staticPath: /
-run:
-  containerPort: "80"
