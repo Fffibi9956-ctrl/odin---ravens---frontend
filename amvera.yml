@@ -1,0 +1,3 @@
+projectName: odin-ravens-frontend
+runtime: static
+entrypoint: index.html
