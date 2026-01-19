@@ -1,3 +1,13 @@
-projectName: odin-ravens-frontend
-runtime: static
-entrypoint: index.html
+meta:
+  environment: python
+  toolchain:
+    name: pip
+    version: "3.11"
+build:
+  requirementsPath: requirements.txt
+  useCache: true
+run:
+  scriptName: index.html
+  command: null
+  persistenceMount: /data
+  containerPort: "80"
